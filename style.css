@@ -9,24 +9,19 @@ footer{
     text-align: center;
 }
 
-/* Splitting the screen in half */
-.split{
-width:50%;
-height: 50vh;
-padding-top: 20px;
-}
+
 
 /* Control the left side */
 #left_Section {
-    display:flex;
-left: 0;
+    display: block;
+    float: left;
 background-color: #111;
 }
 
 /* Control the right side */
 #right_Section {
-
-right: 0;
+    display: block;
+    float: right;
 background-color: red;
 }
 /* .left-imgs {
