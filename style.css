@@ -1,12 +1,10 @@
 h1 {
-text-align: center;
-
-font-family:Verdana, Geneva, Tahoma, sans-serif
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-body{
 
+body{
     background-color: rgb(218, 210, 210);
-   
 }
 
 

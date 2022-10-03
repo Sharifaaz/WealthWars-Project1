@@ -21,17 +21,28 @@ const LarryPRight = document.getElementById("Larry-Page-right")
 const SergeyRight = document.getElementById("Sergey-Brin-right")
 const SteveRight = document.getElementById("Steve-Ballmer-right")
 const LarryERight = document.getElementById("Larry-Ellison-right")
+let leftCard
+let rightCard
 
 // Creating an Array of the whole list of imgs so I could choose it in the Random function that would shuffle the imgs randomly.
-let ArrLeft = [ElonLeft,JeffLeft,BillLeft, MarkLeft, LarryPLeft, SergeyLeft,SteveLeft, LarryELeft ]
+let arrLeft = [ElonLeft,JeffLeft,BillLeft, MarkLeft, LarryPLeft, SergeyLeft,SteveLeft, LarryELeft ]
 
 // Creating an Array of the right section of imgs
-let ArrRight = [ElonRight, JeffRight, BillRight, MarkRight, LarryERight, SergeyRight, SteveRight,LarryERight]
+let arrRight = [ElonRight, JeffRight, BillRight, MarkRight, LarryERight, SergeyRight, SteveRight,LarryERight]
 
 
-let StartsBTN =document.getElementById("StartsBtn")
-StartsBTN.addEventListener("click", StartsFun)
+let startBtn=document.querySelector("#start")
+startBtn.addEventListener("click", startsFun)
+ 
+function startsFun (event) {
+    console.log("Starting")
+    flipCards()
+}
 
-function StartsFun (event,shuffle) {
-    console.log(shuffle.)
+function flipCards() {
+    rightCard = arrRight[Math.floor(Math.random() * 7)]
+    leftCard = arrLeft[Math.floor(Math.random()*7)]
+    // flight random card from left
+    console.log (rightCard)
+    console.log(leftCard)
 }
