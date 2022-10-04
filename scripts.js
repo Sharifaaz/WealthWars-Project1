@@ -39,10 +39,44 @@ function startsFun (event) {
     flipCards()
 }
 
+
 function flipCards() {
     rightCard = arrRight[Math.floor(Math.random() * 7)]
     leftCard = arrLeft[Math.floor(Math.random()*7)]
-    // flight random card from left
+    // flip random card from left and right
+    rightCard.style.display = 'block'
+    leftCard.style.display = 'block'
     console.log (rightCard)
     console.log(leftCard)
+}
+
+// Adding an Event Listener to the "Rest Button" and creating a function that rest the game.
+
+let restBtn = document.getElementById("RestBtn")
+restBtn.addEventListener("click", restGame)
+
+function restGame () {
+
+    // doesn't work
+// document.querySelectorAll(".right-imgs").style.display= ""
+// document.querySelectorAll(".left-imgs").style.display = ""
+
+// resting the right side imgs
+ document.getElementById("Elon-Musk-right").style.display='none'
+ document.getElementById("Jeff-Bezos-right").style.display='none'
+ document.getElementById("Bill-gates-right").style.display='none'
+ document.getElementById("Mark-Zuck-right").style.display='none'
+ document.getElementById("Larry-Page-right").style.display='none'
+ document.getElementById("Sergey-Brin-right").style.display='none'
+ document.getElementById("Steve-Ballmer-right").style.display='none'
+ document.getElementById("Larry-Ellison-right").style.display='none'
+// resting the left side imgs
+document.getElementById("Elon-Musk-left").style.display='none'
+document.getElementById("Jeff-Bezos-left").style.display='none'
+document.getElementById("Bill-gates-left").style.display='none'
+document.getElementById("Mark-Zuck-left").style.display='none'
+document.getElementById("Larry-Page-left").style.display='none'
+document.getElementById("Sergey-Brin-leftt").style.display='none'
+document.getElementById("Steve-Ballmer-left").style.display='none'
+document.getElementById("Larry-Ellison-left").style.display='none'
 }

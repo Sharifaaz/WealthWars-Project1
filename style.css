@@ -45,14 +45,17 @@ footer{
 .left-imgs {
     align-items: stretch;
     position: absolute;
+    display: none;
 }
 
 
 .right-imgs{
+    display: none;
     align-items: stretch;
     position: absolute;
 }
 .result {
+    
     margin:auto;
     justify-content: space-between;
 }
