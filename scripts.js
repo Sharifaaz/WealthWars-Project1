@@ -21,6 +21,9 @@
  const SergeyRight = document.getElementById("Sergey-Brin-right")
  const SteveRight = document.getElementById("Steve-Ballmer-right")
  const LarryERight = document.getElementById("Larry-Ellison-right")
+ 
+ 
+ 
  let leftCard
  let rightCard
 
@@ -36,7 +39,6 @@ startBtn.addEventListener("click", startsFun)
  
 function startsFun (event) {
     console.log("Starting")
-    
     flipCards()
 }
 
@@ -54,13 +56,14 @@ function flipCards() {
     console.log(leftCard)
     console.log(rightIdx)
     console.log(leftIdx)
+    removeEventListener()
     gameLogic(leftIdx,rightIdx)
 
 }
 
 // Adding an Event Listener to the "Rest Button" and creating a function that rest the game.
 
-let continueButton =document.getElementById("continueBtn")
+let continueButton = document.getElementById("continueBtn")
 continueButton.addEventListener("click", gameLogic)
 
 
@@ -74,133 +77,179 @@ continueButton.addEventListener("click", gameLogic)
  let futureAssets = document.getElementById("future-assets")
  let finalResult = document.getElementById("Result")
 
+ 
+ 
+ let netCounter = 0
+ let netfutureCounter = 0
+ let assetsCounter = 0
+ let futureAssetsCounter = 0
  function gameLogic (lIdx,rIdx) {
  
 
-
     if (lIdx < rIdx) {
         if (lIdx ==='0') {
-        yourNetWorth = yourNetWorth + 248;   
-        yourAssets = yourAssets + 1;
-        console.log (`Your Net Worth: $${yourNetWorth}B`)
-        console.log (`Your Assets:${yourAssets}`)
+        
+        netCounter = netCounter + 248;   
+        assetsCounter = assetsCounter + 1;
+        
+        
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
     }
     else if (lIdx === '1') 
     {
-        yourNetWorth = yourNetWorth + 136
-        yourAssets = yourAssets + 1;
-        console.log (`Your Net Worth: $${yourNetWorth}B`)
-        console.log (`Your Assets:${yourAssets}`)
+
+        netCounter = netCounter + 136;   
+        assetsCounter = assetsCounter + 1;
+        
+        
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        
     }
     else if (lIdx === '2') {
-        yourNetWorth = yourNetWorth + 103;   
-        yourAssets = yourAssets + 1;
-        console.log (`Your Net Worth: $${yourNetWorth}B`)
-        console.log (`Your Assets:${yourAssets}`)
-
+        
+        netCounter = netCounter + 103;   
+        assetsCounter = assetsCounter + 1;
+        
+        
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        
+        
     }
     else if (lIdx === '3') {
-        yourNetWorth = yourNetWorth + 90;   
-        yourAssets = yourAssets + 1;
-        console.log (`Your Net Worth: $${yourNetWorth}B`)
-        console.log (`Your Assets:${yourAssets}`)
+        
+        netCounter = netCounter + 90;   
+        assetsCounter = assetsCounter + 1;
+        
+        
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        
     }
     else if (lIdx === '4')
     { 
-        yourNetWorth = yourNetWorth + 85;   
-        yourAssets = yourAssets + 1;
-        console.log (`Your Net Worth: $${yourNetWorth}B`)
-        console.log (`Your Assets:${yourAssets}`)
+
+        netCounter = netCounter + 85;   
+        assetsCounter = assetsCounter + 1;
+        
+        
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+    
 
     }
     else if (lIdx === '5') {
-        yourNetWorth = yourNetWorth + 82;   
-        yourAssets = yourAssets + 1;
-        console.log (`Your Net Worth: $${yourNetWorth}B`)
-        console.log (`Your Assets:${yourAssets}`)
-    }
+
+        netCounter = netCounter + 82;   
+        assetsCounter = assetsCounter + 1;
+        
+        
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`) }
+        
     else if (lIdx === '6') {
-        yourNetWorth = yourNetWorth + 79;   
-        yourAssets = yourAssets + 1;
-        console.log (`Your Net Worth: $${yourNetWorth}B`)
-        console.log (`Your Assets:${yourAssets}`)
+
+        netCounter = netCounter + 79;   
+        assetsCounter = assetsCounter + 1;
+        
+        
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        
     }
 else if (lIdx === '7') {
-    yourNetWorth = yourNetWorth + 50;   
-    yourAssets = yourAssets + 1;
-    console.log (`Your Net Worth: $${yourNetWorth}B`)
-    console.log (`Your Assets:${yourAssets}`)
+
+        netCounter = netCounter + 50;   
+        assetsCounter = assetsCounter + 1;
+        
+        
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        
 }
 }
 else if (rIdx < lIdx)
 { 
-    if (rIdx === '0')
+    if (rIdx === '0') {
     
-    futureNetWorth = futureNetWorth + 248;
-    futureAssets = futureAssets + 1
-    console.log(`Future Net Worth: $${futureNetWorth}B`)
-    console.log(`Future Assets: ${futureAssets}`)
+        netfutureCounter = netfutureCounter + 248
+        futureAssetsCounter = futureAssetsCounter + 1
+
+        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
+        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+    }
 
     else if (rIdx ==='1')
 {
-    futureNetWorth = futureNetWorth + 136;
-    futureAssets = futureAssets + 1
-    console.log(`Future Net Worth: $${futureNetWorth}B`)
-    console.log(`Future Assets: ${futureAssets}`)  
+        netfutureCounter = netfutureCounter + 136
+        futureAssetsCounter = futureAssetsCounter + 1
+
+        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
+        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
 }
 else if (rIdx === '2') 
 {
-    futureNetWorth = futureNetWorth + 103;
-    futureAssets = futureAssets + 1
-    console.log(`Future Net Worth: $${futureNetWorth}B`)
-    console.log(`Future Assets: ${futureAssets}`)
+        netfutureCounter = netfutureCounter + 103
+        futureAssetsCounter = futureAssetsCounter + 1
+
+        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
+        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
 }
 else if (rIdx === '3') 
 {
-    futureNetWorth = futureNetWorth + 90;
-    futureAssets = futureAssets + 1
-    console.log(`Future Net Worth: $${futureNetWorth}B`)
-    console.log(`Future Assets: ${futureAssets}`)
+        netfutureCounter = netfutureCounter + 90
+        futureAssetsCounter = futureAssetsCounter + 1
+
+        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
+        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
 }
 else if (rIdx === '4')
 {
-    futureNetWorth = futureNetWorth + 85;
-    futureAssets = futureAssets + 1
-    console.log(`Future Net Worth: $${futureNetWorth}B`)
-    console.log(`Future Assets: ${futureAssets}`)
+        netfutureCounter = netfutureCounter + 85
+        futureAssetsCounter = futureAssetsCounter + 1
+
+        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
+        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
 }
 else if (rIdx === '5') 
 {
-    futureNetWorth = futureNetWorth + 82;
-    futureAssets = futureAssets + 1
-    console.log(`Future Net Worth: $${futureNetWorth}B`)
-    console.log(`Future Assets: ${futureAssets}`)
+        netfutureCounter = netfutureCounter + 82
+        futureAssetsCounter = futureAssetsCounter + 1
+
+        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
+        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
 }
 else if (rIdx === '6') 
 {
-    futureNetWorth = futureNetWorth + 79;
-    futureAssets = futureAssets + 1
-    console.log(`Future Net Worth: $${futureNetWorth}B`)
-    console.log(`Future Assets: ${futureAssets}`)
+        netfutureCounter = netfutureCounter + 79
+        futureAssetsCounter = futureAssetsCounter + 1
+
+        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
+        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
 }
  else if (rIdx === '7')
  {
-    futureNetWorth = futureNetWorth + 50;
-    futureAssets = futureAssets + 1
-    console.log(`Future Net Worth: $${futureNetWorth}B`)
-    console.log(`Future Assets: ${futureAssets}`)
+        netfutureCounter = netfutureCounter + 50
+        futureAssetsCounter = futureAssetsCounter + 1
+
+        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
+        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
  }
  }
  else if (rIdx === lIdx){
+
+    finalResult.innerHTML= "Wealth Wars!"
  console.log (`Wealth Wars`)
  }
- gameResult(yourNetWorth,yourAssets,futureNetWorth,futureAssets)
+ gameResult(yourNetWorth,futureNetWorth)
  }
   
 // Function that Compares between the Net-Worth, the Future Net-Worth, Assets and future Assets. 
  function gameResult (netResult,  futureNetResult) {
     if (netResult > futureNetResult) {
-  finalResult.innerHTML="Congragulation! Your Net Worth is $" + netResult + "B"
+    finalResult.innerHTML="Congragulation! Your Net Worth is $" + netResult + "B"
     }
     else if (netResult < futureNetResult)
     {
@@ -230,7 +279,8 @@ document.getElementById("Jeff-Bezos-left").style.display='none'
 document.getElementById("Bill-gates-left").style.display='none'
 document.getElementById("Mark-Zuck-left").style.display='none'
 document.getElementById("Larry-Page-left").style.display='none'
-document.getElementById("Sergey-Brin-leftt").style.display='none'
+document.getElementById("Sergey-Brin-left").style.display='none'
 document.getElementById("Steve-Ballmer-left").style.display='none'
 document.getElementById("Larry-Ellison-left").style.display='none'
+document.getElementById('Result').style.display='none'
 }
