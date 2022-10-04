@@ -21,7 +21,7 @@ width:280px;
 height: 400px;
 padding: 10px; 
 border: 10px solid rgb(50, 55, 58);
-background-color:white;
+background-image: url("https://news.law.fordham.edu/jcfl/wp-content/uploads/sites/5/2020/01/iStock-1129514615-scaled.jpg")
   }
   
   /* Control the right side */
@@ -32,7 +32,7 @@ background-color:white;
     height: 400px;
     padding: 10px;
     border: 10px solid rgb(50, 55, 58);
-    background-color:white;
+    background-image: url("https://news.law.fordham.edu/jcfl/wp-content/uploads/sites/5/2020/01/iStock-1129514615-scaled.jpg")
   }
   
 
