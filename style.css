@@ -36,7 +36,6 @@ background-color:white;
   }
   
 
-
 footer{
     text-align: center;
     justify-content: center;
@@ -56,6 +55,7 @@ footer{
 }
 .result {
     
+    text-align: center;
     margin:auto;
     justify-content: space-between;
 }

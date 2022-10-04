@@ -1,6 +1,8 @@
 // There will be several fuctions for the game
 // First we need a function that initialize the game.
+console.log(
 
+)
 
 const ElonLeft = document.getElementById("Elon-Musk-left")
 const JeffLeft = document.getElementById("Jeff-Bezos-left")
@@ -11,7 +13,7 @@ const SergeyLeft = document.getElementById("Sergey-Brin-left")
 const SteveLeft = document.getElementById("Steve-Ballmer-left")
 const LarryELeft = document.getElementById("Larry-Ellison-left")
 
-// Grapping the imgs on the right section
+// Grabbing the imgs on the right section
 
 const ElonRight = document.getElementById("Elon-Musk-right")
 const JeffRight = document.getElementById("Jeff-Bezos-right")
@@ -36,30 +38,41 @@ startBtn.addEventListener("click", startsFun)
  
 function startsFun (event) {
     console.log("Starting")
+    
     flipCards()
 }
 
 
 function flipCards() {
-    rightCard = arrRight[Math.floor(Math.random() * 7)]
-    leftCard = arrLeft[Math.floor(Math.random()*7)]
+    
+    rightIdx=Math.floor(Math.random()*7)
+    leftIdx=Math.floor(Math.random() * 7)
+    rightCard = arrRight[leftIdx]
+    leftCard = arrLeft[rightIdx]
     // flip random card from left and right
     rightCard.style.display = 'block'
     leftCard.style.display = 'block'
     console.log (rightCard)
     console.log(leftCard)
+    gameResult(leftIdx,rightIdx)
 }
 
 // Adding an Event Listener to the "Rest Button" and creating a function that rest the game.
+
+let continueButton =document.getElementById("continueBtn")
+continueButton.addEventListener("click", gameResult)
+
+
+function gameResult () {
+
+
+
+}
 
 let restBtn = document.getElementById("RestBtn")
 restBtn.addEventListener("click", restGame)
 
 function restGame () {
-
-    // doesn't work
-// document.querySelectorAll(".right-imgs").style.display= ""
-// document.querySelectorAll(".left-imgs").style.display = ""
 
 // resting the right side imgs
  document.getElementById("Elon-Musk-right").style.display='none'
