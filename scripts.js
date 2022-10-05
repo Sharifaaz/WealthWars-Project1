@@ -95,7 +95,7 @@ continueButton.addEventListener("click", gameLogic)
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
     }
     else if (lIdx === '1') 
@@ -106,8 +106,8 @@ continueButton.addEventListener("click", gameLogic)
         futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
     }
     else if (lIdx === '2') {
@@ -117,10 +117,9 @@ continueButton.addEventListener("click", gameLogic)
         futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        
     }
     else if (lIdx === '3') {
         
@@ -129,8 +128,8 @@ continueButton.addEventListener("click", gameLogic)
         futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
     }
     else if (lIdx === '4')
@@ -141,8 +140,8 @@ continueButton.addEventListener("click", gameLogic)
         futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
 
     }
@@ -153,10 +152,10 @@ continueButton.addEventListener("click", gameLogic)
         futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`) }
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`) 
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-    
+    }
         else if (lIdx === '6') {
 
         netCounter = netCounter + 79;   
@@ -164,7 +163,7 @@ continueButton.addEventListener("click", gameLogic)
         futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
         futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
     }
@@ -175,7 +174,7 @@ else if (lIdx === '7') {
         futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
         futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
 }
@@ -188,10 +187,10 @@ else if (rIdx < lIdx)
         futureAssetsCounter = futureAssetsCounter + 1;
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
-        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
     }
 
     else if (rIdx ==='1')
@@ -200,10 +199,10 @@ else if (rIdx < lIdx)
         futureAssetsCounter = futureAssetsCounter + 1;
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
-        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
 }
 else if (rIdx === '2') 
 {
@@ -211,10 +210,10 @@ else if (rIdx === '2')
         futureAssetsCounter = futureAssetsCounter + 1;
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
-        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
 }
 else if (rIdx === '3') 
 {
@@ -222,10 +221,10 @@ else if (rIdx === '3')
         futureAssetsCounter = futureAssetsCounter + 1
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
-        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
 }
 else if (rIdx === '4')
 {
@@ -233,10 +232,10 @@ else if (rIdx === '4')
         futureAssetsCounter = futureAssetsCounter + 1
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
-        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
 }
 else if (rIdx === '5') 
 {
@@ -244,10 +243,10 @@ else if (rIdx === '5')
         futureAssetsCounter = futureAssetsCounter + 1
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
-        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
 }
 else if (rIdx === '6') 
 {
@@ -255,10 +254,10 @@ else if (rIdx === '6')
         futureAssetsCounter = futureAssetsCounter + 1
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
-        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
 }
  else if (rIdx === '7')
  {
@@ -266,10 +265,10 @@ else if (rIdx === '6')
         futureAssetsCounter = futureAssetsCounter + 1
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
-        futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
  }
  }
  else if (rIdx === lIdx){
