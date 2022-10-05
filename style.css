@@ -4,7 +4,7 @@ h1 {
 }
 
 body{
-    background-color: rgb(218, 210, 210);
+    background-image:url("https://static.amundi.com/sites/default/files/stylwars-part-2-Vignette.png?h=a4cec33c&itok=5G8DXiXG");
 }
 
 
@@ -21,7 +21,7 @@ width:280px;
 height: 400px;
 padding: 10px; 
 border: 10px solid rgb(50, 55, 58);
-background-image: url("https://news.law.fordham.edu/jcfl/wp-content/uploads/sites/5/2020/01/iStock-1129514615-scaled.jpg")
+background-image: url("https://news.law.fordham.edu/jcfl/wp-content/uploads/sites/5/2020/01/iStock-1129514615-scaled.jpg");
   }
   
   /* Control the right side */
@@ -54,7 +54,8 @@ footer{
     position: absolute;
 }
 .result {
-    
+    width: 40vh;
+    height: 40vh;
     text-align: center;
     margin:auto;
     justify-content: space-between;

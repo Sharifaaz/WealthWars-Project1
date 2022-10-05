@@ -31,24 +31,39 @@
 let arrLeft = [ElonLeft,JeffLeft,BillLeft, MarkLeft, LarryPLeft, SergeyLeft,SteveLeft, LarryELeft ]
 
 // Creating an Array of the right section of imgs
-let arrRight = [ElonRight, JeffRight, BillRight, MarkRight, LarryERight, SergeyRight, SteveRight,LarryERight]
+let arrRight = [ElonRight, JeffRight, BillRight, MarkRight, LarryPRight, SergeyRight, SteveRight,LarryERight]
 
 
-let startBtn=document.querySelector("#start")
-startBtn.addEventListener("click", startsFun)
+
+//  let startBtn=document.querySelector("#start")
+
+//  startBtn.addEventListener("click", startsFun)
+
+
  
-function startsFun (event) {
-    console.log("Starting")
-    flipCards()
-}
+//  function startsFun (event) {
+//     console.log("Starting")
+//     // flipCards()
+//     alert("Hey! You won't ever lose! You are playing against your future you either get your Net Worth now in this game you are going to meet the top eight of wealthiest figures in the world! ")
+//  }
 
+let leftSectionArray = document.querySelectorAll(".left-imgs")
+let rightSectionArray = document.querySelectorAll(".right-imgs")
+// let rightSectionArray = document.getElementById("right-Section")
 
 function flipCards() {
-    
+    leftSectionArray.forEach(img => {
+        console.log(img)
+        img.style.display = 'none'
+    })    
+    rightSectionArray.forEach(img => {
+        img.style.display = 'none'
+    })    
+
     rightIdx=Math.floor(Math.random()*8)
-    leftIdx=Math.floor(Math.random() * 8)
-    rightCard = arrRight[leftIdx]
-    leftCard = arrLeft[rightIdx]
+    leftIdx=Math.floor(Math.random() *8)
+    rightCard = arrRight[rightIdx]
+    leftCard = arrLeft[leftIdx]
     // flip random card from left and right
     rightCard.style.display = 'block'
     leftCard.style.display = 'block'
@@ -65,6 +80,7 @@ function flipCards() {
 
 let continueButton = document.getElementById("continueBtn")
 continueButton.addEventListener("click", continueFcn)
+
 
 
 function continueFcn (event) {
@@ -90,26 +106,26 @@ function continueFcn (event) {
  
  let netCounter = 0
  let netfutureCounter = 0
- let assetsCounter = 8
- let futureAssetsCounter = 8
+ let assetsCounter = 10
+ let futureAssetsCounter = 10
 
 
  function gameLogic (lIdx,rIdx) {
  
     
 
-    if (lIdx > rIdx) {
+    if (lIdx < rIdx) {
         if (lIdx =='0') {
         
         netCounter = netCounter + 248;   
         assetsCounter = assetsCounter + 1;
         futureAssetsCounter = futureAssetsCounter - 1;
         
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        futureNetWorth.innerText = (` $${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        finalResult.innerHTML = ("Elon Musk's Net Worth $ 248B") 
         // for testin' purposes
         
         console.log(`Case: lIdx =='0'`)
@@ -121,11 +137,11 @@ function continueFcn (event) {
         assetsCounter = assetsCounter + 1;
         futureAssetsCounter = futureAssetsCounter - 1;
         
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        futureNetWorth.innerText = (` $${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        finalResult.innerHTML = ("Jeff Bezos's Net Worth $ 136B ") 
         // for testin' purposes
         
         console.log(`Case: lIdx =='1'`)
@@ -137,11 +153,11 @@ function continueFcn (event) {
         assetsCounter = assetsCounter + 1;
         futureAssetsCounter = futureAssetsCounter - 1;
         
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-       
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        futureNetWorth.innerText = (` $${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        finalResult.innerHTML = ("Bill Gates's Net Worth $103B") 
         // for testin' purposes
         
         console.log(`Case: lIdx =='2'`)
@@ -152,11 +168,11 @@ function continueFcn (event) {
         assetsCounter = assetsCounter + 1;
         futureAssetsCounter = futureAssetsCounter - 1;
         
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        futureNetWorth.innerText = (` $${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        finalResult.innerHTML = ("Mark Zuckerberg's Net Worth $ 90 B") 
         // for testin' purposes
         
         console.log(`Case: lIdx =='3'`)
@@ -168,11 +184,11 @@ function continueFcn (event) {
         assetsCounter = assetsCounter + 1;
         futureAssetsCounter = futureAssetsCounter - 1;
         
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        futureNetWorth.innerText = (` $${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        finalResult.innerHTML = ("Larry Page's Net Worth $85B") 
         // for testin' purposes
         
         console.log(`Case: lIdx =='4'`)
@@ -183,11 +199,12 @@ function continueFcn (event) {
         assetsCounter = assetsCounter + 1;
         futureAssetsCounter = futureAssetsCounter - 1;
         
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`) 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        futureNetWorth.innerText = (` $${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        finalResult.innerHTML = ("Sergey Brin's Net Worth $ 82B") 
+        
         // for testin' purposes
         
         console.log(`Case: lIdx =='5'`)
@@ -198,11 +215,11 @@ function continueFcn (event) {
         assetsCounter = assetsCounter + 1;
         futureAssetsCounter = futureAssetsCounter - 1;
         
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        futureNetWorth.innerText = (` $${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        finalResult.innerHTML = ("Steve Ballmer's Net Worth $ 79 B") 
         // for testin' purposes
         
         console.log(`Case: lIdx =='6'`)
@@ -213,11 +230,11 @@ else if (lIdx == '7') {
         assetsCounter = assetsCounter + 1;
         futureAssetsCounter = futureAssetsCounter - 1;
         
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        futureNetWorth.innerText = (` $${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        finalResult.innerHTML = ("Larry Ellison's Net Worth $ 50 B") 
         // for testin' purposes
         
         console.log(`Case: lIdx =='7'`)
@@ -230,11 +247,11 @@ else if (rIdx < lIdx){
         futureAssetsCounter = futureAssetsCounter + 1;
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-
+        futureNetWorth.innerText = (`$${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        finalResult.innerHTML = ("Elon Musk's Net Worth $ 248B")
         // for testin' purposes
         
         console.log(`Case: rIdx ==='0'`)
@@ -246,11 +263,11 @@ else if (rIdx < lIdx){
         futureAssetsCounter = futureAssetsCounter + 1;
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-
+        futureNetWorth.innerText = (`$${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        finalResult.innerHTML = ("Jeff Bezos's Net Worth $ 136B ") 
         // for testin' purposes
         
         console.log(`Case: rIdx ==='1'`)
@@ -262,10 +279,11 @@ else if (rIdx == '2')
         futureAssetsCounter = futureAssetsCounter + 1;
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+        futureNetWorth.innerText = (`$${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        finalResult.innerHTML = ("Bill Gates's Net Worth $103B")
 
         
         // for testin' purposes
@@ -279,11 +297,11 @@ else if (rIdx === '3')
         futureAssetsCounter = futureAssetsCounter + 1
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-
+        futureNetWorth.innerText = (`$${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        finalResult.innerHTML = ("Mark Zuckerberg's Net Worth $90B") 
         // for testin' purposes
         
         console.log(`Case: rIdx === '3'`)
@@ -294,11 +312,11 @@ else if (rIdx == '4')
         futureAssetsCounter = futureAssetsCounter + 1
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        
+        futureNetWorth.innerText = (`$${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        finalResult.innerHTML = ("Larry Page's Net Worth $85B")
         // for testin' purposes
         
         console.log(`Case: rIdx === '4'`)
@@ -311,11 +329,11 @@ else if (rIdx == '5')
         futureAssetsCounter = futureAssetsCounter + 1
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        
+        futureNetWorth.innerText = (`$${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        finalResult.innerHTML = ("Sergey Brin's Net Worth $ 82B")
         // for testin' purposes
         
         console.log(`Case: Idx === '5'`)
@@ -326,11 +344,11 @@ else if (rIdx == '6')
         futureAssetsCounter = futureAssetsCounter + 1
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-
+        futureNetWorth.innerText = (`$${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        finalResult.innerHTML = ("Steve Ballmer's Net Worth $ 79B")
         // for testin' purposes
         
         console.log(`Case rIdx === '6'`)
@@ -341,19 +359,22 @@ else if (rIdx == '6')
         futureAssetsCounter = futureAssetsCounter + 1
         assetsCounter = assetsCounter -1;
 
-        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
-        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
-        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
-        
+        futureNetWorth.innerText = (`$${netfutureCounter}B`)
+        futureAssets.innerText = (`${futureAssetsCounter} Units`)
+        yourNetWorth.innerText=(`$${netCounter}B`)
+        yourAssets.innerText=(`${assetsCounter} Units`)
+        finalResult.innerHTML = ("Larry Ellison's Net Worth $ 50B")
         
         // for testing purposes
         console.log (`case: rIdx === '7'`)
  }
  }
  else if (rIdx == lIdx){
-
-    finalResult.innerHTML= "Wealth Wars!"
+ assetsCounter = assetsCounter -1;
+ futureAssetsCounter = futureAssetsCounter - 1;
+ futureAssets.innerText = (`${futureAssetsCounter} Units`)
+ yourAssets.innerText=(`${assetsCounter} Units`)
+ finalResult.innerHTML= "Wealth Wars!"
  console.log (`Wealth Wars`)
  }
  
