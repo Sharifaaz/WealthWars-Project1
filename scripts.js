@@ -64,9 +64,14 @@ function flipCards() {
 // Adding an Event Listener to the "Rest Button" and creating a function that rest the game.
 
 let continueButton = document.getElementById("continueBtn")
-continueButton.addEventListener("click", gameLogic)
+continueButton.addEventListener("click", continueFcn)
 
 
+function continueFcn (event) {
+    console.log("continueing the game")
+    
+    gameLogic(leftIdx,rightIdx)
+}
 // lIdx : Parameter that returns the random array index thats excuted by Math.random() of the arrLeft.
 // rIdx : Parameter that returns the random array index of the arrRight.
 
@@ -77,14 +82,17 @@ continueButton.addEventListener("click", gameLogic)
  let futureAssets = document.getElementById("future-assets")
  let finalResult = document.getElementById("Result")
 
- 
+// Parameters that stores and counts the scores of the game
  
  let netCounter = 0
  let netfutureCounter = 0
  let assetsCounter = 8
  let futureAssetsCounter = 8
+
+
  function gameLogic (lIdx,rIdx) {
  
+    
 
     if (lIdx < rIdx) {
         if (lIdx ==='0') {
@@ -97,6 +105,10 @@ continueButton.addEventListener("click", gameLogic)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
         futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
+
+        // for testin' purposes
+        
+        console.log(`Case: lIdx ==='0'`)
     }
     else if (lIdx === '1') 
     {
@@ -109,7 +121,12 @@ continueButton.addEventListener("click", gameLogic)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
         futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
+        
+        // for testin' purposes
+        
+        console.log(`Case: lIdx ==='1'`)
     }
+
     else if (lIdx === '2') {
         
         netCounter = netCounter + 103;   
@@ -120,6 +137,10 @@ continueButton.addEventListener("click", gameLogic)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
         futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
+       
+        // for testin' purposes
+        
+        console.log(`Case: lIdx ==='2'`)
     }
     else if (lIdx === '3') {
         
@@ -131,6 +152,10 @@ continueButton.addEventListener("click", gameLogic)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
         futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
+
+        // for testin' purposes
+        
+        console.log(`Case: lIdx ==='3'`)
     }
     else if (lIdx === '4')
     { 
@@ -144,6 +169,9 @@ continueButton.addEventListener("click", gameLogic)
         futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
 
+        // for testin' purposes
+        
+        console.log(`Case: lIdx ==='4'`)
     }
     else if (lIdx === '5') {
 
@@ -155,6 +183,10 @@ continueButton.addEventListener("click", gameLogic)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`) 
         futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}B`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
+
+        // for testin' purposes
+        
+        console.log(`Case: lIdx ==='5'`)
     }
         else if (lIdx === '6') {
 
@@ -166,6 +198,10 @@ continueButton.addEventListener("click", gameLogic)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
         futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
+        
+        // for testin' purposes
+        
+        console.log(`Case: lIdx ==='6'`)
     }
 else if (lIdx === '7') {
 
@@ -177,6 +213,10 @@ else if (lIdx === '7') {
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
         futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
+        
+        // for testin' purposes
+        
+        console.log(`Case: lIdx ==='7'`)
 }
 }
 else if (rIdx < lIdx)
@@ -191,6 +231,10 @@ else if (rIdx < lIdx)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+
+        // for testin' purposes
+        
+        console.log(`Case: rIdx ==='0'`)
     }
 
     else if (rIdx ==='1')
@@ -203,6 +247,11 @@ else if (rIdx < lIdx)
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+
+        // for testin' purposes
+        
+        console.log(`Case: rIdx ==='1'`)
+        
 }
 else if (rIdx === '2') 
 {
@@ -214,6 +263,12 @@ else if (rIdx === '2')
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+
+        
+        // for testin' purposes
+        
+        console.log(`Case: rIdx === '2'`)
+
 }
 else if (rIdx === '3') 
 {
@@ -225,6 +280,10 @@ else if (rIdx === '3')
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+
+        // for testin' purposes
+        
+        console.log(`Case: rIdx === '3'`)
 }
 else if (rIdx === '4')
 {
@@ -236,6 +295,12 @@ else if (rIdx === '4')
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+        
+        // for testin' purposes
+        
+        console.log(`Case: rIdx === '4'`)
+
+
 }
 else if (rIdx === '5') 
 {
@@ -247,6 +312,10 @@ else if (rIdx === '5')
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+        
+        // for testin' purposes
+        
+        console.log(`Case: Idx === '5'`)
 }
 else if (rIdx === '6') 
 {
@@ -258,6 +327,10 @@ else if (rIdx === '6')
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+
+        // for testin' purposes
+        
+        console.log(`Case rIdx === '6'`)
 }
  else if (rIdx === '7')
  {
@@ -269,6 +342,10 @@ else if (rIdx === '6')
         futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+        
+        
+        // for testing purposes
+        console.log (`case: rIdx === '7'`)
  }
  }
  else if (rIdx === lIdx){
@@ -276,11 +353,14 @@ else if (rIdx === '6')
     finalResult.innerHTML= "Wealth Wars!"
  console.log (`Wealth Wars`)
  }
+ 
  gameResult(yourNetWorth,futureNetWorth)
- }
+ 
+}
   
 // Function that Compares between the Net-Worth, the Future Net-Worth, Assets and future Assets. 
- function gameResult (netResult,  futureNetResult) {
+ 
+function gameResult (netResult,  futureNetResult) {
     if (netResult > futureNetResult) {
     finalResult.innerHTML="Congragulation! Your Net Worth is $" + netResult + "B"
     }
