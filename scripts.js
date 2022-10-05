@@ -56,7 +56,7 @@ function flipCards() {
     console.log(leftCard)
     console.log(rightIdx)
     console.log(leftIdx)
-    removeEventListener()
+    
     gameLogic(leftIdx,rightIdx)
 
 }
@@ -67,7 +67,7 @@ let continueButton = document.getElementById("continueBtn")
 continueButton.addEventListener("click", gameLogic)
 
 
-// lIdx : Parameter that returns the random array index of the arrLeft.
+// lIdx : Parameter that returns the random array index thats excuted by Math.random() of the arrLeft.
 // rIdx : Parameter that returns the random array index of the arrRight.
 
 
@@ -81,8 +81,8 @@ continueButton.addEventListener("click", gameLogic)
  
  let netCounter = 0
  let netfutureCounter = 0
- let assetsCounter = 0
- let futureAssetsCounter = 0
+ let assetsCounter = 8
+ let futureAssetsCounter = 8
  function gameLogic (lIdx,rIdx) {
  
 
@@ -91,151 +91,185 @@ continueButton.addEventListener("click", gameLogic)
         
         netCounter = netCounter + 248;   
         assetsCounter = assetsCounter + 1;
-        
+        futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
-        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter} Units`)
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
     }
     else if (lIdx === '1') 
     {
 
         netCounter = netCounter + 136;   
         assetsCounter = assetsCounter + 1;
-        
+        futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
-        
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
     }
     else if (lIdx === '2') {
         
         netCounter = netCounter + 103;   
         assetsCounter = assetsCounter + 1;
-        
+        futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
-        
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
         
     }
     else if (lIdx === '3') {
         
         netCounter = netCounter + 90;   
         assetsCounter = assetsCounter + 1;
-        
+        futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
-        
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
     }
     else if (lIdx === '4')
     { 
 
         netCounter = netCounter + 85;   
         assetsCounter = assetsCounter + 1;
-        
+        futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
-    
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
 
     }
     else if (lIdx === '5') {
 
         netCounter = netCounter + 82;   
         assetsCounter = assetsCounter + 1;
-        
+        futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter}`) }
-        
-    else if (lIdx === '6') {
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
+    
+        else if (lIdx === '6') {
 
         netCounter = netCounter + 79;   
         assetsCounter = assetsCounter + 1;
-        
+        futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
-        
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
     }
 else if (lIdx === '7') {
 
         netCounter = netCounter + 50;   
         assetsCounter = assetsCounter + 1;
-        
+        futureAssetsCounter = futureAssetsCounter - 1;
         
         yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
         yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
-        
+        futureNetWorth.innerHTML = (`Future Net Worth: $${netfutureCounter}`)
+        futureAssets.innerHTML = (`Future Assets: ${futureAssetsCounter} Units`)
 }
 }
 else if (rIdx < lIdx)
 { 
     if (rIdx === '0') {
     
-        netfutureCounter = netfutureCounter + 248
-        futureAssetsCounter = futureAssetsCounter + 1
+        netfutureCounter = netfutureCounter + 248;
+        futureAssetsCounter = futureAssetsCounter + 1;
+        assetsCounter = assetsCounter -1;
 
         futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
         futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
     }
 
     else if (rIdx ==='1')
 {
-        netfutureCounter = netfutureCounter + 136
-        futureAssetsCounter = futureAssetsCounter + 1
+        netfutureCounter = netfutureCounter + 136;
+        futureAssetsCounter = futureAssetsCounter + 1;
+        assetsCounter = assetsCounter -1;
 
         futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
         futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
 }
 else if (rIdx === '2') 
 {
-        netfutureCounter = netfutureCounter + 103
-        futureAssetsCounter = futureAssetsCounter + 1
+        netfutureCounter = netfutureCounter + 103;
+        futureAssetsCounter = futureAssetsCounter + 1;
+        assetsCounter = assetsCounter -1;
 
         futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
         futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
 }
 else if (rIdx === '3') 
 {
         netfutureCounter = netfutureCounter + 90
         futureAssetsCounter = futureAssetsCounter + 1
+        assetsCounter = assetsCounter -1;
 
         futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
         futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
 }
 else if (rIdx === '4')
 {
         netfutureCounter = netfutureCounter + 85
         futureAssetsCounter = futureAssetsCounter + 1
+        assetsCounter = assetsCounter -1;
 
         futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
         futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
 }
 else if (rIdx === '5') 
 {
         netfutureCounter = netfutureCounter + 82
         futureAssetsCounter = futureAssetsCounter + 1
+        assetsCounter = assetsCounter -1;
 
         futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
         futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
 }
 else if (rIdx === '6') 
 {
         netfutureCounter = netfutureCounter + 79
         futureAssetsCounter = futureAssetsCounter + 1
+        assetsCounter = assetsCounter -1;
 
         futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
         futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
 }
  else if (rIdx === '7')
  {
         netfutureCounter = netfutureCounter + 50
         futureAssetsCounter = futureAssetsCounter + 1
+        assetsCounter = assetsCounter -1;
 
         futureNetWorth.innerHTML = (`Future Net Worth: $${futureNetWorth}B`)
         futureAssetsCounter.innerHTML = (`Future Assets: ${futureAssets}`)
+        yourNetWorth.innerHTML=(`Your Net Worth: $${netCounter}B`)
+        yourAssets.innerHTML=(`Your Assets:${assetsCounter}`)
  }
  }
  else if (rIdx === lIdx){
