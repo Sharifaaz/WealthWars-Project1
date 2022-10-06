@@ -13,6 +13,27 @@ h3 {
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
+#net-worth-future {
+    font-weight: 300;
+    color: rgb(48, 47, 47);
+    }
+
+#future-assets {
+    font-weight: 300;
+    color: rgb(48, 47, 47);
+}
+
+#net-worth{
+    font-weight: 300;
+color: rgb(48, 47, 47);
+}
+#assets {
+
+font-weight: 300;
+color: rgb(48, 47, 47);
+}
+
+
 
 .bg {
     /* The image used */
