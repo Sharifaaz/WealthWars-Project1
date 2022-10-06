@@ -24,7 +24,7 @@ live link:
 
 
 
-
+I'll TAke you through the code now and will complete the README later on...
 
 
 
