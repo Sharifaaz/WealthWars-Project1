@@ -9,7 +9,7 @@ live link:
 
 # Game's Aim
 
-<!-- giving the cards game a meaning since I am interesting in those characters and wanted to inspire the Player to read about their successful stories.. -->
+<!-- giving the cards game a meaning since I am interested in those characters and wanted to inspire the Player to read about their successful stories.. -->
 
 
 
