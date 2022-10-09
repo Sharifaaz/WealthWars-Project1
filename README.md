@@ -44,5 +44,10 @@ live link: https://github.com/Sharifaaz/WealthWars-Project1.git
 
 <!-- Javascripts, HTML and CSS -->
 
-#
+# Resources
+<!-- Game Theme Inspired by the Top wealtiest characters in Tech
+However, heres a link thats shows the statistics of the characters net worths-->
+https://ceoworld.biz/2020/11/28/10-richest-and-most-successful-tech-tycoons/
+
+
 
