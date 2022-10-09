@@ -9,30 +9,41 @@ h3 {
 }
 
 .center {
+    
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 #net-worth-future {
-    font-weight: 300;
+    font-weight: bold;
     color: rgb(48, 47, 47);
+   font-style: normal ;
     }
 
 #future-assets {
-    font-weight: 300;
+    font-weight: bold;
     color: rgb(48, 47, 47);
+    font-style: normal ;
 }
 
 #net-worth{
-    font-weight: 300;
+    font-weight: bold;
 color: rgb(48, 47, 47);
+font-style: normal ;
+
 }
 #assets {
 
-font-weight: 300;
+font-weight: bold;
 color: rgb(48, 47, 47);
+font-style: normal ;
 }
+.parameters {
 
+    font-weight: bold;
+    color: rgb(48, 47, 47);
+    font-style: normal ;
+}
 
 
 .bg {
@@ -73,7 +84,7 @@ text-align: center
 }
 
 #left-Section {
-margin: 100px;
+margin: 50px;
 width:280px;
 height: 400px;
 padding: 10px; 
@@ -83,7 +94,7 @@ background-image: url("https://media0.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.g
   
   /* Control the right side */
   #right-Section {
-    margin: 100px;
+    margin: 50px;
     width:280px;
     height: 400px;
     padding: 10px;
@@ -118,8 +129,8 @@ footer{
 }
 
 
-#continueBtn {
-    margin: 200px 200px 50px 50px;
+#playBtn {
+    margin: 0px 10px 0px 0px;
     border-radius: 10px;
     border-color: rgb(71, 138, 160);
     padding: 10px 20px;
@@ -131,7 +142,7 @@ footer{
     color: rgb(27, 27, 71)
 }
 #RestBtn {
-    margin: 200px 200px 50px 50px;
+    margin: 0px 10px 0px 0px;
     border-radius: 10px;
     border-color: rgb(71, 138, 160);
     padding: 10px 20px;
@@ -141,7 +152,6 @@ footer{
     background-color:rgb(255, 255, 255);
     display: inline-block;
     color: rgb(27, 27, 71)
-
 }
 
 

@@ -1,5 +1,5 @@
 # WealthWars-Project1
-live link: 
+live link: https://github.com/Sharifaaz/WealthWars-Project1.git
 
 # Game-Description 
 
@@ -9,7 +9,7 @@ live link:
 
 # Game's Aim
 
-<!-- giving the cards game a meaning since I am interested in those characters and wanted to inspire the Player to read about their successful stories.. -->
+<!-- Giving the cards game a meaning since I am interested in those characters and wanted to inspire the Player to read about their successful stories.. -->
 
 
 
@@ -21,26 +21,28 @@ live link:
 3-Net Worth: Represnts the Player's score
 4-Assets : Represnts the Player's cards
 
--when the page reloads the instruction page pops up first and there's a start link to the game that takes me to the game page.
+-When the page reloads the instruction page pops up first and there's a start link to the game that takes me to the game page.
 
 -There are two main butoons 
 
-1- PLAY BUTTON: its controled to be clickable 10 times only to limit the games rounds, also it returns the game's result.
+1- PLAY BUTTON: its controled to be clickable 10 times only to limit the game's rounds, also it returns the game's result.
 
 2- RESTART BUTTON: It rest the DOM Elements values and return the user to the game's instruction page to restart the game.
 
+-Functions used in the game:
 
+// # playFcn : A function that applied on the "Play Button" that calls an another function
+// that flip the cards randomly.
+// # flipCards : it picks random imgs from an array for each side left and right.
+// # gameLogic : it takes the number of indecies of the imgs displayed on both sides and it counts
+//  the "Net-worth and Assets scores" and it returns the values of theses counters.
+// # finalResult : it compares the final scores of the game and decides which wins the game.
+// # restGame : its an event listener function for the "Restart Game" button that rest all counters 
+// and it return the user to the Instruction Page. -->
 
+# Technologies Used:
 
+<!-- Javascripts, HTML and CSS -->
 
-
-
-
-
-
-
-
-
-
--->
+#
 

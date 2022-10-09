@@ -21,7 +21,7 @@ html {
 }
 h3{
     color: white;
-    font-weight: 300;
+    font-weight: bold;
     text-align: center;
 
 }
@@ -33,8 +33,8 @@ h1 {
 }
 h2 {
     color: white;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
 
 }
@@ -47,8 +47,8 @@ p{
     color: white;
 }
 a{
-    color: black;
-    font-weight: 400;
+    color: white;
+    font-weight: bold;
     font-size: 25px;
     display:block;
     text-align:center;
