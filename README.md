@@ -1,4 +1,5 @@
 # WealthWars-Project1
+
 live link: https://github.com/Sharifaaz/WealthWars-Project1.git
 
 # Game-Description 
@@ -47,6 +48,7 @@ Giving the cards game a meaning since I am interested in those characters and wa
 Javascripts, HTML and CSS.
 
 # Resources
+
 Game Theme Inspired by the Top wealtiest figuress in Tech
 However, here's a link thats show the statistics of the figure's net worths.
 https://ceoworld.biz/2020/11/28/10-richest-and-most-successful-tech-tycoons/
