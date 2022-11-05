@@ -1,6 +1,6 @@
 # WealthWars-Project1
 
-live link: https://github.com/Sharifaaz/WealthWars-Project1.git
+live link: https://sharifaaz.github.io/WealthWars-Project1/
 
 # Game-Description 
 
