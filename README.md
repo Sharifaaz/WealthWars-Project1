@@ -5,11 +5,17 @@
 
 
 
-# App Description 
+# Application's Description 
 
 The project is a game for one player vs. AI 
 The game is " Wars (Cards Game)
 The Idea of the game is that the cards illustrates the top wealthiest figures in Tech where the top wealthiest character's card gets the highest score and the less wealthy figure its card get discarded to the wealthier character, the game consists of ten rounds, each round two random characters displayed and compared in term of the wealthier figure, however the user only can win in this game because its designed that the score ("Net worth") is either gained currently or in the future since the AI represents the player's 'Future Net Worth'. 
+
+# Applications Wireframe
+
+
+![WW-Project](https://user-images.githubusercontent.com/113825391/200132349-dbcd953c-30ce-4f18-a041-27150b13dae5.png)
+(Project Wireframe)
 
 # Game's Aim
 
