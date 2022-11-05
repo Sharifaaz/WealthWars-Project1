@@ -15,7 +15,6 @@ The Idea of the game is that the cards illustrates the top wealthiest figures in
 
 
 ![WW-Project](https://user-images.githubusercontent.com/113825391/200132349-dbcd953c-30ce-4f18-a041-27150b13dae5.png)
-(Project Wireframe)
 
 # Game's Aim
 
@@ -82,11 +81,11 @@ Its an event listener function for the "Restart Game" button that rest all count
 
 Javascripts, HTML, CSS and Figma.
 
-# Resources
+# Refrences
 
-Game Theme Inspired by the Top wealtiest figuress in Tech
-However, here's a link thats show the statistics of the figure's net worths.
-https://ceoworld.biz/2020/11/28/10-richest-and-most-successful-tech-tycoons/
+### Game Theme Inspired by the Top wealtiest figures in Techenology
+However, here's a link [Ceoworld Magazine](https://ceoworld.biz/2020/11/28/10-richest-and-most-successful-tech-tycoons/)
+ thats show the statistics of the figure's net worths.
 
 
 
