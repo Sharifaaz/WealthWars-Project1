@@ -1,23 +1,36 @@
 h1 {
+    padding-top: 0%;
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 h3 {
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .center {
     
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.result-Statement{
+text-align: center;
+text-shadow: 0.5ch;
+font-weight: bold;
+margin: 0;
+display:flex;
+flex-direction: column;
+padding-top: 25%;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+width: 416px;
+height:80px
+}
 #net-worth-future {
     font-weight: bold;
     color: rgb(48, 47, 47);
    font-style: normal ;
+   padding-top: 0%;
     }
 
 #future-assets {
@@ -72,7 +85,8 @@ font-style: normal ;
 {
     display:flex;
     flex-direction: column;
-text-align: center
+text-align: center;
+
 }
 
 
@@ -87,7 +101,7 @@ text-align: center
 margin: 50px;
 width:280px;
 height: 400px;
-padding: 10px; 
+padding: 0px; 
 border: 10px solid rgb(50, 55, 58);
 background-image: url("https://media0.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif");
   }
@@ -97,7 +111,7 @@ background-image: url("https://media0.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.g
     margin: 50px;
     width:280px;
     height: 400px;
-    padding: 10px;
+    padding: 0px;
     border: 10px solid rgb(50, 55, 58);
     background-image: url("https://media0.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif")
   }
@@ -133,7 +147,7 @@ footer{
     margin: 0px 10px 0px 0px;
     border-radius: 10px;
     border-color: rgb(71, 138, 160);
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: center;
     font-weight: 400;
     font-size: 18px;
@@ -142,10 +156,10 @@ footer{
     color: rgb(27, 27, 71)
 }
 #RestBtn {
-    margin: 0px 10px 0px 0px;
+    margin: 0px 25px 0px 0px;
     border-radius: 10px;
     border-color: rgb(71, 138, 160);
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: center;
     font-weight: 400;
     font-size: 18px;

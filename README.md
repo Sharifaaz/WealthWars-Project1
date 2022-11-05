@@ -1,8 +1,11 @@
-# WealthWars-Project1
+# Wealth Wars Cards Game
 
-live link: https://sharifaaz.github.io/WealthWars-Project1/
+## The Game can be Accessed Through this Link :
+### [GitHub Pages Link](https://sharifaaz.github.io/WealthWars-Project1/)
 
-# Game-Description 
+
+
+# App Description 
 
 The project is a game for one player vs. AI 
 The game is " Wars (Cards Game)
@@ -12,40 +15,66 @@ The Idea of the game is that the cards illustrates the top wealthiest figures in
 
 Giving the cards game a meaning since I am interested in those characters and wanted to inspire the Player to read about their successful stories..
 
-
-
 # Technical Description
 
-#There are Four main variables of the game
+## There are Four main variables of the game:
 
-1- Future Assets: Represents the AI's Cards
-2-Future Net Worth: Represents the AI's score 
-3-Net Worth: Represnts the Player's score
-4-Assets : Represnts the Player's cards
+### Future Assets : 
+Represents the AI's Cards.
+### Future Net Worth :
+ Represents the AI's score.
+### Net Worth : 
+Represnts the Player's score
+### Assets : 
+Represnts the Player's cards.
 
--When the page reloads the instruction page pops up first and there's a start link to the game that takes me to the game page.
+## There are Three main buttons in the App 
 
--There are two main butoons 
+### 1- PLAY BUTTON : 
 
-1- PLAY BUTTON: its controled to be clickable 10 times only to limit the game's rounds, also it returns the game's result.
+Its controled to be clickable 10 times only to limit the game's rounds, also it returns the game's result.
 
-2- RESTART BUTTON: It rest the DOM Elements values and return the user to the game's instruction page to restart the game.
 
-##Functions used in the game:
+### 2- RESTART BUTTON :
 
-#playFcn : A function that applied on the "Play Button" that calls an another function that flip the cards randomly.
+It rest the DOM Elements values and return the user to the game's instruction page to restart the game.
 
-#flipCards : it picks random imgs from an array for each side left and right.
 
-#gameLogic : it takes the number of indecies of the imgs displayed on both sides and it counts the "Net-worth and Assets scores" and it returns the values of theses counters.
+### 3- INSTRUCTIONS BUTTON :
 
-#finalResult : it compares the final scores of the game and decides which wins the game.
+It displays to the user, the game's instruction, the scoring criteria and the winning condition.
 
-#restGame : its an event listener function for the "Restart Game" button that rest all counters and it return the user to the Instruction Page.
+
+## Sub-buttons 
+There are sub-buttons to allow the user to return to any page of the app without refreshing the page for a convenient user experience.
+
+
+## Functions used in the game 
+
+### playFcn : 
+
+A function that applied on the "Play Button" that calls an another function that flip the cards randomly.
+
+### flipCards: 
+
+It picks random imgs from an array for each side left and right.
+
+### gameLogic : 
+
+It takes the number of indecies of the imgs displayed on both sides and it counts the "Net-worth and Assets scores" and it returns the values of theses counters.
+
+
+### finalResult : 
+
+It compares the final scores of the game and decides which wins the game.
+
+### restGame : 
+
+Its an event listener function for the "Restart Game" button that rest all counters and it return the user to the Instruction Page.
 
 # Technologies Used:
 
-Javascripts, HTML and CSS.
+Javascripts, HTML, CSS and Figma.
 
 # Resources
 
